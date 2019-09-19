@@ -22,13 +22,13 @@ export default class App extends React.Component {
   
   render() {
     return (
-      <React.Fragment>
+      <>
         <div>
         <div>Name: {this.state.name}</div>
         <div># of Updates: {this.state.count}</div>
         </div>
-          <Form name={this.state.name} count={this.state.count} handleNameChange={this.handleNameChange} />
-        </React.Fragment>
+        <Form state={this.state} handleNameChange={this.handleNameChange} />
+      </>
     );
   }
 }

@@ -4,8 +4,8 @@ export default class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.name,
-      count: this.props.count,
+      name: this.props.state.name,
+      count: this.props.state.count,
     };      
   }
 
@@ -27,7 +27,7 @@ export default class Form extends React.Component {
         } />
         <button type="submit">Change Name</button>
         </form>
-        </>
+      </>
     );
   }
 }
