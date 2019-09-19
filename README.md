@@ -1,3 +1,26 @@
+# LAB - 28
+
+## React external state practice
+
+### Author: Leyi Li
+
+
+### Links and Resources
+* [submission PR](https://github.com/401-advanced-javascript-leyla/lab-28-external-state/pulls)
+
+### Modules
+#### `Counter`
+The counter class extends React component and it has counter and checkNumber in its state.
+#### `Header`
+The header class extends React component and it will insert a header into the DOM
+#### `Footer`
+The footer class extends React component and it will insert a footer into the DOM
+
+### Setup
+
+#### Running the app
+* `npm install`
+* `npm start`
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +89,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
