@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Form extends React.Component {
   constructor(props) {
     super(props);
+    console.log(this.props);
     this.state = {
-      name: this.props.state.name,
-      count: this.props.state.count,
+      name: props.newState.name,
+      count: props.newState.count,
     };      
   }
 
@@ -31,3 +33,8 @@ export default class Form extends React.Component {
     );
   }
 }
+
+Form.propTypes = {
+  newState: PropTypes.object,
+  handleNameChange: PropTypes.func,
+};

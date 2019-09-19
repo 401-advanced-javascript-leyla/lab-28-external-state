@@ -9,7 +9,16 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('<Form />', () => {
   it('renders the Form component', () => {
-    const app = shallow(<Form />);
+    const newState = { name: 'hello', count: '0' };
+    const handleNameChange = (newName) => {
+      this.setState((previousState) => {
+        return {
+          name: newName,
+          count: previousState.count + 1,
+        };
+      });
+    };
+    const app = shallow(<Form newState={newState} handleNameChange={handleNameChange} />);
     expect(app.find('form').exists()).toBeTruthy();
   });
 });

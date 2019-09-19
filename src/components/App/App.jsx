@@ -21,13 +21,14 @@ export default class App extends React.Component {
   };
   
   render() {
+    const newState = this.state;
     return (
       <>
         <div>
         <div>Name: {this.state.name}</div>
         <div># of Updates: {this.state.count}</div>
         </div>
-        <Form state={this.state} handleNameChange={this.handleNameChange} />
+        <Form newState={newState} handleNameChange={this.handleNameChange} />
       </>
     );
   }
